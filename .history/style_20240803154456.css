@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+    --ff-big-shoulders-display: "Big Shoulders Display", sans-serif;
+    --ff-lexand-deca: "Lexand Deca", sans-serif;
+}
+
+html,body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px, solid red; */
+    min-height: 100%;
+}
+
+body {
+    font-size: 15px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+
+section {
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+
+}
+
+/* cards */
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+img {
+    width: 30%;
+}
+
+h2 {
+    font-family: var(--ff-big-shoulders-display);
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+p{
+    /* color: var(--transparent-white); */
+    font-family: var(--ff-lexand-deca);
+    font-weight: 400;
+    /* width: 186px; */
+    line-height: 1.5rem;
+    width: 200px;
+    
+}
+
+button{
+    width: 60%;
+    height: 3rem;
+    border: none;
+    border-radius: 5rem;
+    font-family: var(--ff-lexand-deca);
+}
+
+#card-1{
+    background-color: var(--bright-orange);
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+#card-1 button{
+    color: var(--bright-orange);
+}
+
+#cards-2{
+    background-color: var(--dark-cyan);
+}
+
+#cards-2 button{
+    color: var(--dark-cyan);
+}
+
+#cards-3{
+    background-color: var(--very-dark-cyan);
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+#cards-3 button{
+    color: var(--very-dark-cyan);
+}
+
+@media(max-width:428px){
+    section{
+        flex-direction: column;
+        min-width: 40%;
+    }
+    .cards{
+        min-width: 50%;
+    }
+    main{
+        margin: 30px 0;
+    }
+    width: ;
+}
